@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+    <h1>JavaScript Objects</h1>
+    <h2>Display Properties</h2>
+
+    <p id="demo"></p>
+
+    <script>
+        // Create an Object
+        const person = {
+            name: "John",
+            age: 30,
+            city: "New York"
+        };
+
+        // Create an Array
+        const myArray = Object.values(person);
+        const text = myArray.join(', ');
+
+        // Display the Array
+        document.getElementById("demo").innerHTML = text;
+    </script>
+
+</body>
+
+</html>
