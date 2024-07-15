@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+
+    <h2>JavaScript Global Methods</h2>
+
+    <p>The Number() method can convert a date to a number:</p>
+
+    <p id="demo"></p>
+    <p id="demo2"></p>
+
+    <script>
+        let dateString = "1970-01-01";
+        let x = new Date(dateString);
+        document.getElementById("demo").innerHTML = dateString + ": " + Number(x); 
+
+        dateString = "1971-01-01";
+        x = new Date(dateString);
+        document.getElementById("demo2").innerHTML = dateString + ": " + Number(x); 
+    </script>
+
+</body>
+
+</html>
