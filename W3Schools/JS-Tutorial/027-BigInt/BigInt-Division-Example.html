@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+
+    <h1>JavScript Bigint</h1>
+    <h2>BigInt Divide</h2>
+
+    <p>A BigInt can not have decimals.</p>
+    <p>Cannot mix BigInt and other types, use explicit conversions.</p>
+    <p id="demo"></p>
+    <p id="demo2"></p>
+    <p id="demo3"></p>
+
+    <script>
+        let x = 5n;
+        let y = Number(x) / 2;
+
+        document.getElementById("demo").innerHTML = y; 
+
+        y = 5n / 2n ;
+        document.getElementById("demo2").innerHTML = "5n / 2n = " + y + " typeof y: " + typeof y; 
+
+        y = 5n % 2n ;
+        document.getElementById("demo3").innerHTML = "5n % 2n = " + y + " typeof y: " + typeof y; 
+
+    </script>
+
+</body>
+
+</html>
