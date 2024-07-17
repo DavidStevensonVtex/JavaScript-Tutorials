@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+
+    <h1>JavaScript Booleans</h1>
+    <p>Display the Boolean value of 0:</p>
+
+    <p id="demo"></p>
+
+    <script>
+        let x = 0;
+        document.getElementById("demo").innerHTML = "0: " + Boolean(x) + "<br />" +
+            "-0: " + Boolean(-0) + "<br />"
+            + "empty string: " + Boolean("") + "<br />" 
+            + "NaN: " + Boolean(NaN) + "<br />" 
+            + "undefined: " + Boolean(undefined) ;
+    </script>
+
+</body>
+
+</html>
