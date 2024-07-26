@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+
+    <h2>JavaScript Hoisting</h2>
+
+    <p>With <b>const</b>, you cannot use a variable before it is declared.</p>
+    <p>Try to remove the //.</p>
+
+    <p id="demo"></p>
+
+    <script>
+        try {
+            carName = "Volvo";
+            const carName;  // const declarations must be initialized
+            document.getElementById("demo").innerHTML = carName;
+        }
+        catch (err) {
+            document.getElementById("demo").innerHTML = err.name + "<br>" + err.message;
+        }
+
+    </script>
+
+</body>
+
+</html>
